@@ -558,7 +558,7 @@ void openProfileEditor(const std::string& profileId,
     resCell->registerClickAction(
         [draft, resCell, updateNativeScaleVisibility](brls::View*) {
             const std::vector<int> heights = {-1, 360, 480, 540, 720, 1080,
-                                              1440};
+                                              1440, 2160};
             std::vector<std::string> options;
             int selected = 4;
             for (size_t i = 0; i < heights.size(); ++i) {

@@ -176,6 +176,7 @@
         "resolution": "Risoluzione",
         "resolution_native": "Nativa",
         "resolution_1440p": "1440p (may lag)",
+        "resolution_2160p": "2160p 4K (may lag)",
         "resolution_high_warning": "1440p and Native 2.0x can stutter on Switch. Drop to 1080p or 720p if it lags.",
         "may_lag": "may lag",
         "resolution_scale": "Scala",

@@ -15,7 +15,7 @@ inline const char* legacyProfileStoreFilename() {
 inline int normalizeProfileHeight(int height) {
     if (height == -1)
         return -1;
-    constexpr int allowed[] = {360, 480, 540, 720, 1080, 1440};
+    constexpr int allowed[] = {360, 480, 540, 720, 1080, 1440, 2160};
     int best = 720;
     int bestDistance = std::abs(height - best);
     for (int value : allowed) {
@@ -28,7 +28,7 @@ inline int normalizeProfileHeight(int height) {
     return best;
 }
 
-// 1440p (and native 2.0x) is more decode work than the Switch panel. Warn in UI.
+// 1440p/2160p (and native 2.0x) is more decode work than the Switch panel. Warn in UI.
 inline bool highResolutionMayLag(int resolutionHeight,
                                  int nativeScalePercent = 100) {
     if (resolutionHeight >= 1440)

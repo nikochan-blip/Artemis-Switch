@@ -18,7 +18,7 @@ struct StreamConfigProfile {
     std::string name;
 
     // Video
-    int resolutionHeight = 720; // -1 native, or 360 / 480 / 540 / 720 / 1080 / 1440
+    int resolutionHeight = 720; // -1 native, or 360 / 480 / 540 / 720 / 1080 / 1440 / 2160
     StreamAspectRatio aspectRatio = StreamAspectRatio::Ratio16x9;
     int fps = 60;
     // 0 = fps * 100. NTSC presets store 5994 / 11988 / etc.

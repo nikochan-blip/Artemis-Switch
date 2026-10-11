@@ -547,6 +547,7 @@
         "resolution": "Résolution",
         "resolution_native": "Native",
         "resolution_1440p": "1440p (peut lag)",
+        "resolution_2160p": "2160p 4K (peut lag)",
         "resolution_high_warning": "Le 1440p et Native 2.0x peuvent saccader sur Switch. Passez en 1080p ou 720p si ça lag.",
         "may_lag": "peut lag",
         "resolution_scale": "Échelle",

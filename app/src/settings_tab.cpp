@@ -125,6 +125,7 @@ SettingsTab::SettingsTab() {
         "settings/resolution_native"_i18n, "360p", "480p", "540p", "720p", "1080p",
 #if !defined(__PSV__)
         "settings/resolution_1440p"_i18n,
+        "settings/resolution_2160p"_i18n,
 #endif
     };
     resolution->setText("settings/resolution"_i18n);
@@ -138,6 +139,7 @@ SettingsTab::SettingsTab() {
         GET_SETTINGS(resolution, 1080, 5);
 #if !defined(__PSV__)
         GET_SETTINGS(resolution, 1440, 6);
+        GET_SETTINGS(resolution, 2160, 7);
 #endif
         DEFAULT;
     }
@@ -318,6 +320,7 @@ SettingsTab::SettingsTab() {
             SET_SETTING(5, set_resolution(1080));
 #if !defined(__PSV__)
             SET_SETTING(6, set_resolution(1440));
+            SET_SETTING(7, set_resolution(2160));
 #endif
             DEFAULT;
         }
